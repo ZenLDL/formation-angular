@@ -2,8 +2,10 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { AdresseComponent } from './composants/adresse/adresse.component';
 import { CalculComponent } from './composants/calcul/calcul.component';
+import { FormulaireComponent } from './composants/formulaire/formulaire.component';
 import { HomeComponent } from './composants/home/home.component';
 import { NotFoundComponent } from './composants/not-found/not-found.component';
+import { ProduitComponent } from './composants/produit/produit.component';
 import { StagiaireComponent } from './composants/stagiaire/stagiaire.component';
 import { TableauComponent } from './composants/tableau/tableau.component';
 
@@ -11,6 +13,8 @@ const routes: Routes = [
   { path: '', component: HomeComponent },
   { path: 'adresse', component: AdresseComponent },
   { path: 'calcul', component: CalculComponent },
+  { path: 'produit', component: ProduitComponent },
+  { path: 'formulaire', component: FormulaireComponent },
   { path: 'tableau', component: TableauComponent },
   { path: 'tableau/:id', component: TableauComponent },
   { path: 'stagiaire', component: StagiaireComponent },

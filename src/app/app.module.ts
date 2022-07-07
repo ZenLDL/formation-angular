@@ -12,6 +12,11 @@ import { HeaderComponent } from './composants/header/header.component';
 import { TableauComponent } from './composants/tableau/tableau.component';
 import { CalculComponent } from './composants/calcul/calcul.component';
 import { GetCharPipe } from './pipes/get-char.pipe';
+import { EvenValuePipe } from './pipes/even-value.pipe';
+import { SubStrPipe } from './pipes/sub-str.pipe';
+import { FormulaireComponent } from './composants/formulaire/formulaire.component';
+import { FormsModule } from '@angular/forms';
+import { ProduitComponent } from './composants/produit/produit.component';
 
 @NgModule({
   declarations: [
@@ -24,11 +29,16 @@ import { GetCharPipe } from './pipes/get-char.pipe';
     HeaderComponent,
     TableauComponent,
     CalculComponent,
-    GetCharPipe
+    GetCharPipe,
+    EvenValuePipe,
+    SubStrPipe,
+    FormulaireComponent,
+    ProduitComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -145,7 +145,16 @@
         {{ elt.key }} {{ elt.value }}
     </li>
 </ul> -->
-<p>{{ title | getChar }}</p>
+<p>{{ title | getchar }}</p>
+<p>{{ "bonjour" | getchar:1 }}</p>
 
+<h3>Pipe : EvenValue</h3>
+<ul>
+    <li *ngFor="let elt of tab | evenValue">
+        {{ elt }}
+    </li>
+</ul>
+
+<p>{{ "bonjour" | substr:3 }}</p>
 
 
